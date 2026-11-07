@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout, Server, Database, GitBranch, Cpu, Terminal } from 'lucide-react';
 
-export default function Skills() {
+export default function skills() {
   const skillCategories = [
     {
       title: 'Frontend Development',

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
-export default function Navbar() {
+export default function navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [

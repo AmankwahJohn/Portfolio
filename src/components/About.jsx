@@ -1,7 +1,7 @@
 import React from 'react';
 import { Crown, Users, Zap, Activity } from 'lucide-react';
 
-export default function About() {
+export default function about() {
   const qualities = [
     {
       title: 'Leader',
