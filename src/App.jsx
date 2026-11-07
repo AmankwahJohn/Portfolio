@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "./components/navbar.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/about.jsx";
