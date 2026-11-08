@@ -36,7 +36,7 @@ export default function about() {
           </h2>
 
           <p className="text-lg text-zinc-400 max-w-2xl leading-relaxed">
-           I am a Computer Science student at the University of Ghana and Co-Founder & CEO of Vekta (Startup). I love solving problems that actually improve businesses and make them more efficient in their dealings. In recent years I've developed a strong interest in AI/ML and I am currently exploring the field to gain more knowledge and experience. I am passionate about leveraging technology to create innovative solutions that can make a positive impact on society.
+           I am a Computer Science student at the University of Ghana and Co-Founder & CEO of Vekta (Startup). I love solving problems that actually improve businesses and make them more efficient in their dealings. In recent years I&apos;ve developed a strong interest in AI/ML and I am currently exploring the field to gain more knowledge and experience. I am passionate about leveraging technology to create innovative solutions that can make a positive impact on society.
           </p>
         </div>
 

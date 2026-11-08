@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
-export default function navbar() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
@@ -16,8 +16,7 @@ export default function navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-[#27272a]">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        
-        {/* Brand / Logo with a stylized 'J' */}
+
         <a href="#home" className="flex items-center gap-2.5 font-bold text-lg text-white group">
           <div className="w-9 h-9 flex items-center justify-center rounded-xl bg-blue-600/10 border border-blue-500/20 text-blue-400 font-extrabold text-base group-hover:bg-blue-600/20 transition-all">
             J
@@ -25,16 +24,16 @@ export default function navbar() {
           <span>Johnny</span>
         </a>
 
-        {/* Desktop Navigation Links */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium">
           {navLinks.map((link) => {
             const isContact = link.name === 'Contact Me';
+
             return (
-              <a 
-                key={link.name} 
-                href={link.href} 
+              <a
+                key={link.name}
+                href={link.href}
                 className={
-                  isContact 
+                  isContact
                     ? "px-5 py-2 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20"
                     : "text-zinc-400 hover:text-white transition-colors"
                 }
@@ -45,21 +44,21 @@ export default function navbar() {
           })}
         </div>
 
-        {/* Mobile Menu Toggle Button */}
-        <button 
-          onClick={() => setIsOpen(!isOpen)} 
+        <button
+          onClick={() => setIsOpen(!isOpen)}
           className="md:hidden p-2 rounded-xl bg-[#18181b] border border-[#27272a] text-zinc-300 hover:text-white focus:outline-none"
           aria-label="Toggle Menu"
+          aria-expanded={isOpen}
         >
           {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </div>
 
-      {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-[#121212] border-b border-[#27272a] px-6 py-6 flex flex-col gap-4 shadow-2xl">
           {navLinks.map((link) => {
             const isContact = link.name === 'Contact Me';
+
             return (
               <a
                 key={link.name}
