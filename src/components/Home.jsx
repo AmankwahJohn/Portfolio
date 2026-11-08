@@ -27,7 +27,7 @@ export default function Home() {
         {/* Greeting & Statement with Highlighted & Normal Text */}
         <div className="flex flex-col items-center gap-4 max-w-2xl">
           <h1 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
-            Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-400">John Adjei Amankwah</span>
+            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-400">John Adjei Amankwah</span>
           </h1>
 
           <p className="text-lg text-zinc-400 leading-relaxed">
